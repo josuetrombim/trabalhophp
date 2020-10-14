@@ -32,22 +32,48 @@
         }
 
         .menu-content {
-            width: 500px;
-            height: 500px;
-            border-radius: 10px;
-            background-color: rgb(0, 0, 0, 0.7);
-            margin: 0 auto;
-            color: #ffffff;
-        }
-
-        table {
             width: 100%;
+            max-width: 700px;
+            padding: 10px;
+            margin: 0 auto;
         }
 
-        tr {
-            height: 40px;
-            background-color: red;
-        }
+        .collapsible {
+        background-color: #777;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        margin-top: 5px;
+      }
+
+      .active,
+      .collapsible:hover {
+        background-color: #555;
+      }
+
+      .collapsible:after {
+        content: "\002B";
+        color: white;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+      }
+
+      .active:after {
+        content: "\2212";
+      }
+
+      .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+      }
     </style>
 
 </head>
@@ -57,24 +83,24 @@
         <h2 class="subtitulo">Escolha o seu lanche e faça o seu pedido</h2>
     </header>
     <div class='menu-content'>
-        <table>
-            <!-- <thead>
-                <tr>
-                    <td>Teste1</td>
-                    <td>Teste2</td>
-                </tr>
-            </thead> -->
-            <tbody>
-                <!-- <tr>
-                    <th>
-                        teste1
-                    </th>
-                    <th>
-                        teste2
-                    </th>
-                </tr> -->
-            </tbody>
-        </table>
+    <div class="collapsible">Produto 1</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
+      <div class="collapsible">Produto 2</div>
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </div>
     </div>
     <!-- <div class="container">  -->
     </div>
