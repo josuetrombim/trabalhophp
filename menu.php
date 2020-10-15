@@ -12,7 +12,7 @@
             padding: 0;
             box-sizing: border-box;
             /* height: 100vh;
-			width: 100vw; */
+			      width: 100vw; */
             background-image: url("img/fundo.png");
         }
 
@@ -43,31 +43,30 @@
         .collapsible {
         background-color: #777;
         color: white;
-        cursor: pointer;
+        cursor: pointer; /* altera o cursor do mouse*/
         padding: 18px;
         border: none;
         text-align: left;
-        outline: none;
         font-size: 15px;
         margin-top: 5px;
       }
 
       .active,
       .collapsible:hover {
-        background-color: #555;
+        background-color: #555;  /*deixa o campo mais escuro quando passa o mouse por cima*/
       }
 
-      .collapsible:after {
+      /* .collapsible:after {
         content: "\002B";
         color: white;
         font-weight: bold;
         float: right;
         margin-left: 5px;
-      }
+      } */
 
-      .active:after {
+      /* .active:after {
         content: "\2212";
-      }
+      } */
 
       /* .content {
         padding: 0 18px;

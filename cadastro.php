@@ -4,7 +4,7 @@
 	<title>JJ Lanches - Cadastro</title>
 	<meta charset="UTF-8"/>
 	<style type="text/css">
-		.body{
+		body{
 			margin: 0px;
 			padding: 0px;
 			box-sizing: border-box;
