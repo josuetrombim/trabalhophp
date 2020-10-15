@@ -27,8 +27,10 @@
         }
 
         header {
-            background-color: red;
+            /* background-color: red; */
             padding: 5px;
+            text-align: center;
+            color: white;
         }
 
         .menu-content {
@@ -80,7 +82,16 @@
         overflow: hidden;
         transition: max-height 0.2s ease-out;
         background-color: #f1f1f1;
+        margin-top: 0px 0px;
+        
       }
+      .content p{
+          margin-left: 2px;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+      }
+    
     </style>
 
 </head>
@@ -90,27 +101,27 @@
         <h2 class="subtitulo">Escolha o seu lanche e faça o seu pedido</h2>
     </header>
     <div class='menu-content'>
-    <div class="collapsible">Produto 1</div>
+    <div class="collapsible">Cheese Bacon</div>
       <div class="content">
         <p>
+        <img src="img/cheese.png" alt="hamburguer cheese bacon" >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
       </div>
-      <div class="collapsible">Produto 2</div>
+      <div class="collapsible">Cheese Egg</div>
       <div class="content">
         <p>
+        <img src="img/cheeseburger.png" alt="hamburguer cheese burguer">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
       </div>
-    </div>
-    <!-- <div class="container">  -->
-    </div>
+   
      <!-- <script>
     var coll = document.getElementsByClassName("collapsible");
     var i;

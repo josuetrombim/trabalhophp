@@ -18,7 +18,7 @@
 		.container {
 			height: 100vh;
 			width: 100vw;
-			background-image: url("grelha.jpg");
+			background-image: url("img/grelha.jpg");
 			background-repeat: round;
 			display: flex;
 			justify-content: center;
@@ -31,29 +31,23 @@
 			color: #cfcfcf;
 			padding: 5px 10px;
 		}
-
-		.margin-5: {
+		.margin-5 {
 			margin: 5px;
 		}
-
 		.form-login > label, input, button {
 			margin: 5px;
 		}
-
 		.form-login > input {
 			height: 20px;
 		}
-
 		.form-login > button {
 			background-color: blue;
 		}
-
 		.form-login > a {
 			text-decoration: none;
 			color: #cfcfcf;
 			font-size: 1rem;
 		}
-
 		.form-login > button {
 			width: 50%;
 			height: 25px;
@@ -61,12 +55,9 @@
 			border: 1px solid black;
 			background-color: lightgrey;
 		}
-
 	</style>
-
 </head>
 <body>
-
 	<div class="container">
 		<form class='form-login' method="POST" action="menu.php">
 			<h2>Faça seu login</h2>
@@ -80,7 +71,7 @@
 			<br>
 			<a style="margin-top: 10px;" href="#">Esqueceu sua senha?</a>
 			<br>
-			<a href="#">Faca o seu cadastro.</a>
+			<a href="cadastro.php">Faca o seu cadastro.</a>
 		</form>
 	</div>
  </body>
